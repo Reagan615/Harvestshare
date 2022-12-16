@@ -1,0 +1,30 @@
+{
+  "id": "3677378",
+  "name": "作业",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "23943124",
+      "name": "账号管理",
+      "font_class": "zhanghaoguanli",
+      "unicode": "f962",
+      "unicode_decimal": 63842
+    },
+    {
+      "icon_id": "23943276",
+      "name": "任务",
+      "font_class": "renwu",
+      "unicode": "f9db",
+      "unicode_decimal": 63963
+    },
+    {
+      "icon_id": "23943326",
+      "name": "书籍",
+      "font_class": "shuji",
+      "unicode": "fa07",
+      "unicode_decimal": 64007
+    }
+  ]
+}
