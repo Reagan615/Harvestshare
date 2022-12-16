@@ -49,11 +49,11 @@ let password = document.querySelector('#password');
 let btn = document.querySelector('.sub');
 let tips = document.querySelector('.tips');
 const emailRegex = /^[-a-z0-9~!$%^&*_=+}{\'?]+(\.[-a-z0-9~!$%^&*_=+}{\'?]+)*@([a-z0-9_][-a-z0-9_]*(\.[-a-z0-9_]+)*\.(aero|arpa|biz|com|coop|edu|gov|info|int|mil|museum|name|net|org|pro|travel|mobi|[a-z][a-z])|([0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}))(:[0-9]{1,5})?$/i;
-
+/* localStorage.clear('information'); */
 btn.addEventListener('click', function () {
-    /*   console.log(email.value);
-      console.log(password.value); */
+   
     let emailValue = document.querySelector('#email').value.trim();
+    
 
     if (emailValue.length === 0) {
         tips.style.display = 'block';
@@ -65,7 +65,7 @@ btn.addEventListener('click', function () {
             const infoObj = {};
             infoObj.email = email;
             infoObj.password = password;
-
+/*  */
             arrInfo.push(infoObj);
 
             localStorage.setItem("information", JSON.stringify(arrInfo));
@@ -73,8 +73,11 @@ btn.addEventListener('click', function () {
         saveInfo(email.value, password.value);
 
         function getInfo() {
-            const arr = JSON.parse(localStorage.getItem("information"));
-
+            let arr = [];
+            if (localStorage.getItem("information") !== null) {
+                const arr = JSON.parse(localStorage.getItem("information"));
+            };
+        
             return arr;
         }
 
@@ -85,6 +88,4 @@ btn.addEventListener('click', function () {
         window.open('home.html');
     } 
     
-
-
 })
