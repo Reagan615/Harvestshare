@@ -29,7 +29,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #e0af42;
+    /* background-color: linear (135deg, #e0af42, #3f4f65); */
+    background-image: -webkit-linear-gradient(0deg, #e0af42, #3f4f65);
 }
 
 header {
@@ -42,7 +43,7 @@ header {
 }
 
 .head {
-    width: min(100% - 30px, 1366px);
+    width: 86%;
     height: 60px;
     display: flex;
     justify-content: space-between;
@@ -232,6 +233,8 @@ li a.active .link-text {
 }
 
 .user {
+    position: relative;
+    top: -8px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -250,16 +253,16 @@ li a.active .link-text {
 .container {
     position: relative;
     top: 80px;
-    width: min(100% - 30px, 1366px);
+    width: 90%;
     display: flex;
     justify-content: space-between;
-    background-color: #e2e2e2;
+    background-color: #f6f6f6;
     z-index: 1;
 }
 
 .user-info {
-    margin: 30px 30px 30px 30px;
-    width: 25%;
+    margin: 30px 40px 40px 30px;
+    width: 22%;
     height: 60%;
 }
 
@@ -325,7 +328,7 @@ li a.active .link-text {
 }
 
 .connection {
-    width: 48%;
+    width: 45%;
     background-color: #fff;
     margin-right: 10px;
     display: flex;
@@ -407,8 +410,8 @@ li a.active .link-text {
 }
 
 .social {
-    margin: 30px 30px 30px 0px;
-    width: 50%;
+    margin: 30px 40px 30px 0px;
+    width: 45%;
     height: 96%;
 }
 
@@ -791,8 +794,8 @@ li a.active .link-text {
 
 
 .stranger {
-    margin: 30px 30px 30px 0px;
-    width: 30%;
+    margin: 30px 40px 30px 0px;
+    width: 25%;
     height: 50%;
     border-radius: 0px 12px 0px 0px;
 }
